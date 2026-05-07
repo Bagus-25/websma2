@@ -1,0 +1,25 @@
+document.addEventListener('DOMContentLoaded', () => {
+    // Hide Preloader
+    window.addEventListener('load', () => {
+        setTimeout(() => document.getElementById('preloader').classList.add('fade'), 1000);
+    });
+
+    const loginForm = document.getElementById('login-form');
+    const loginSlide = document.getElementById('login-slide');
+    const resultSlide = document.getElementById('result-slide');
+
+    loginForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const u = document.getElementById('username').value;
+        const p = document.getElementById('password').value;
+
+        if (u === '1234' && p === '1234') {
+            loginSlide.classList.remove('active');
+            resultSlide.classList.add('active');
+        } else {
+            alert('Username atau Password Salah!');
+        }
+    });
+
+    document.getElementById('logout-btn').addEventListener('click', () => location.reload());
+});
