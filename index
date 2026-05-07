@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Informasi Kelulusan | SMAN 2 MOJOKERTO</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="loader-content">
+            <img src="logo_sman2.jpg" alt="Logo" class="loader-logo">
+            <div class="loader-bar"></div>
+            <p>Memuat Sistem...</p>
+        </div>
+    </div>
+
+    <div id="app">
+        <!-- SLIDE 1: LOGIN -->
+        <section id="login-slide" class="slide active">
+            <div class="login-card">
+                <img src="logo_sman2.jpg" alt="Logo SMAN 2" class="school-logo-login">
+                <h1>Sistem Informasi Kelulusan</h1>
+                <p class="subtitle">SMAN 2 MOJOKERTO 2026</p>
+                <form id="login-form">
+                    <div class="input-group">
+                        <label>Username</label>
+                        <input type="text" id="username" placeholder="Username (1234)" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Password</label>
+                        <input type="password" id="password" placeholder="Password (1234)" required>
+                    </div>
+                    <button type="submit" class="btn-login">Masuk</button>
+                </form>
+                <p id="error-msg" class="error-msg">Akses Ditolak! Gunakan 1234</p>
+            </div>
+        </section>
+
+        <!-- SLIDE 2: HASIL -->
+        <section id="result-slide" class="slide">
+            <nav class="top-nav">
+                <div class="user-info">Hai MOCHAMAD DIN PANULUH</div>
+                <a href="#" id="logout-btn" class="logout-link">Logout</a>
+            </nav>
+
+            <div class="result-content">
+                <p class="app-title">Aplikasi Kelulusan SMAN 2 MOJOKERTO 2026</p>
+                <h2 class="student-name">MOCHAMAD DIN PANULUH</h2>
+                
+                <div class="status-container">
+                    <div class="status-badge">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="4" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                    </div>
+                    <h3 class="status-text">Maaf, Anda Tidak Lulus</h3>
+                </div>
+
+                <div class="info-message">
+                    <p>Bagi yg tidak lulus, tetap semangat! Teruslah belajar dan jangan menyerah. Kesuksesan menanti di depan.</p>
+                    <p class="try-again">Mohon maaf coba lagi</p>
+                </div>
+
+                <div class="visitor-section">
+                    <p>Anda pengunjung ke :</p>
+                    <div class="visitor-card">
+                        <span class="v-label">VisitorCounter</span>
+                        <span class="v-number">3413</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
